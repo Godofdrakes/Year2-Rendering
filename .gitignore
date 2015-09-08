@@ -11,11 +11,9 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/*
-!depend/lib/[Dd]ebug/
+[Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/*
-!depend/lib/[Rr]elease/
+[Rr]elease/
 [Rr]eleases/
 x64/
 x86/
