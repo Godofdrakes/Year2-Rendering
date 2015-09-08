@@ -12,10 +12,11 @@
 
 # Build results
 [Dd]ebug/
+!depend/lib/[Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
+!depend/lib/[Rr]elease/
 [Rr]eleases/
-!depend/lib/
 x64/
 x86/
 build/
