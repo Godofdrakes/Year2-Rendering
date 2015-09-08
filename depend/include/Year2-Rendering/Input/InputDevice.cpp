@@ -7,25 +7,25 @@ double InputDevice::xpos_old_, InputDevice::ypos_old_, InputDevice::xpos_new_, I
 
 void InputDevice::keyboard_key_callback( GLFWwindow* window, int key, int scancode, int action, int mods ) {
     if ( keys[key] == INPUT_UP ) {
-        if ( action == GLFW_PRESS ) {
+        if ( action == GLFW_PRESS || action == GLFW_REPEAT ) {
             keys[key] = INPUT_PRESS;
         } else if ( action == GLFW_RELEASE ) {
             // Do nothing
         }
     } else if ( keys[key] == INPUT_PRESS ) {
-        if ( action == GLFW_PRESS ) {
+        if ( action == GLFW_PRESS || action == GLFW_REPEAT ) {
             keys[key] = INPUT_DOWN;
         } else if ( action == GLFW_RELEASE ) {
             keys[key] = INPUT_RELEASE;
         }
     } else if ( keys[key] == INPUT_DOWN ) {
-        if ( action == GLFW_PRESS ) {
+        if ( action == GLFW_PRESS || action == GLFW_REPEAT ) {
             // Do nothing
         } else if ( action == GLFW_RELEASE ) {
             keys[key] = INPUT_RELEASE;
         }
     } else if ( keys[key] == INPUT_RELEASE ) {
-        if ( action == GLFW_PRESS ) {
+        if ( action == GLFW_PRESS || action == GLFW_REPEAT ) {
             keys[key] = INPUT_PRESS;
         } else if ( action == GLFW_RELEASE ) {
             keys[key] = INPUT_UP;

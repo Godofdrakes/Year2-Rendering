@@ -15,16 +15,16 @@ FlyCamera::~FlyCamera() {}
 
 void FlyCamera::Update() {
     // Conflicting keys should just cancel eachother out.
-    if ( InputDevice::GetKeyboardKey( up_key_ ) == INPUT_DOWN ) {
+    if ( InputDevice::GetKeyboardKey( up_key_ ) == INPUT_DOWN || InputDevice::GetKeyboardKey( up_key_ ) == INPUT_PRESS ) {
         position_vec3_.y += speed_f_;
     }
-    if ( InputDevice::GetKeyboardKey( down_key_ ) == INPUT_DOWN ) {
+    if ( InputDevice::GetKeyboardKey( down_key_ ) == INPUT_DOWN || InputDevice::GetKeyboardKey( down_key_ ) == INPUT_PRESS ) {
         position_vec3_.y -= speed_f_;
     }
-    if ( InputDevice::GetKeyboardKey( left_key_ ) == INPUT_DOWN ) {
+    if ( InputDevice::GetKeyboardKey( left_key_ ) == INPUT_DOWN || InputDevice::GetKeyboardKey( left_key_ ) == INPUT_PRESS ) {
         position_vec3_.x -= speed_f_;
     }
-    if ( InputDevice::GetKeyboardKey( right_key_ ) == INPUT_DOWN ) {
+    if ( InputDevice::GetKeyboardKey( right_key_ ) == INPUT_DOWN || InputDevice::GetKeyboardKey( right_key_ ) == INPUT_PRESS ) {
         position_vec3_.x += speed_f_;
     }
 

@@ -38,10 +38,10 @@ void MyApp::BeforeRender() {
                          vec3( -10, 0, -10 + n ),
                          n == 10 ? vec4( 1, 1, 1, 1 ) : vec4( 0, 0, 0, 1 ) );
     }
-    camera_->UpdateProjectionViewTransform();
 }
 
 void MyApp::AfterRender() {
+    camera_->UpdateProjectionViewTransform();
     Gizmos::draw( camera_->Camera_View_Transform_Mat4 );
 }
 
