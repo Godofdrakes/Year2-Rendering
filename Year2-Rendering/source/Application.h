@@ -23,23 +23,9 @@ class Application {
     const double TICK_PER_SEC_D_;
     double time_current_d_, time_previous_d_, time_elapsed_d_, time_lag_d_;
 
-    Camera* camera_;
-
     void updateTime();
 
-public:
-    Application();
-    Application( const string set_name );
-    Application( const string set_name, const int set_width, const int set_height );
-    virtual ~Application();
-
-    ApplicationFail Init();
-    void Shutdown();
-
-    bool Tick();
-    void Update();
-    void Render();
-
+protected:
     virtual void BeforeInit() {};
     virtual void AfterInit() {};
 
@@ -54,6 +40,19 @@ public:
 
     virtual void BeforeRender() {};
     virtual void AfterRender() {};
+
+public:
+    Application();
+    Application( const string set_name );
+    Application( const string set_name, const int set_width, const int set_height );
+    virtual ~Application();
+
+    ApplicationFail Init();
+    void Shutdown();
+
+    bool Tick();
+    void Update();
+    void Render();
 
 };
 
