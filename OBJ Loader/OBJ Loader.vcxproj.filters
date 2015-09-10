@@ -13,5 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Depend">
+      <UniqueIdentifier>{9e002b65-cccc-4dd3-86f1-f825022e4e3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\GLCore">
+      <UniqueIdentifier>{d39ab909-25d2-44d9-923e-71b3d5b1b72e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Depend\Gizmos">
+      <UniqueIdentifier>{a91bc0cb-bcf6-4a42-8aa3-d796dc83546b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\include\GLCORE\gl_core_4_4.c">
+      <Filter>Depend\GLCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\include\GIZMOS\Gizmos.cpp">
+      <Filter>Depend\Gizmos</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ObjApp\ObjApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\depend\include\GLCORE\gl_core_4_4.h">
+      <Filter>Depend\GLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\include\GIZMOS\Gizmos.h">
+      <Filter>Depend\Gizmos</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ObjApp\ObjApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
