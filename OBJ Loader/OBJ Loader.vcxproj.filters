@@ -47,5 +47,8 @@
     <ClInclude Include="source\ObjApp\ObjApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="source\ObjApp\OpenGLInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

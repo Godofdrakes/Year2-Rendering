@@ -9,7 +9,7 @@
 #include <GLFW/glfw3.h>
 #include <Year2-Rendering/Camera/FlyCamera.h>
 
-void RenderApp::GenerateGrid(unsigned rows, unsigned cols) {
+void RenderApp::GenerateGrid( unsigned rows, unsigned cols ) {
     Vertex* arrVertex = new Vertex[rows* cols];
     for ( unsigned int r = 0; r < rows; ++r ) {
         for ( unsigned int c = 0; c < cols; ++c ) {
@@ -99,7 +99,7 @@ bool RenderApp::BuildShaders( const char* pathToVertexShader, const char* pathTo
     unsigned int vertexShader = LoadShader( pathToVertexShader, GL_VERTEX_SHADER );
     unsigned int fragmentShader = LoadShader( pathToFragmentShader, GL_FRAGMENT_SHADER );
 
-    if( vertexShader == 0 && fragmentShader == 0 ) {
+    if ( vertexShader == 0 && fragmentShader == 0 ) {
         if ( vertexShader == 0 ) { cout << "Failed to load Vertex Shader!" << endl; }
         if ( fragmentShader == 0 ) { cout << "Failed to load Fragment Shader!" << endl; }
         return false;
@@ -127,7 +127,7 @@ bool RenderApp::BuildShaders( const char* pathToVertexShader, const char* pathTo
     return true;
 }
 
-unsigned int RenderApp::LoadShader(const char* pathToShader, unsigned int shaderType ) {
+unsigned int RenderApp::LoadShader( const char* pathToShader, unsigned int shaderType ) {
     using namespace std;
     unsigned int shaderHandle = glCreateShader( shaderType );
 

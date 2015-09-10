@@ -150,6 +150,7 @@
     <ClInclude Include="..\depend\include\GIZMOS\Gizmos.h" />
     <ClInclude Include="..\depend\include\GLCORE\gl_core_4_4.h" />
     <ClInclude Include="source\ObjApp\ObjApp.h" />
+    <ClInclude Include="source\ObjApp\OpenGLInfo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

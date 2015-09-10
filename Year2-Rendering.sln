@@ -16,6 +16,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OBJ Loader", "OBJ Loader\OB
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rendering Geometry", "Rendering Geometry\Rendering Geometry.vcxproj", "{5DB3F91B-31E9-4012-9D95-330FA0F375F2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BF18C40C-CA9E-4412-878B-DCF8B6DC8EB9} = {BF18C40C-CA9E-4412-878B-DCF8B6DC8EB9}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

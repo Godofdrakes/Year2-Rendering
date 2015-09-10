@@ -4,6 +4,8 @@
 
 #include <Year2-Rendering/Application.h>
 
+class Camera;
+
 class RenderApp : public Application {
     void GenerateGrid( unsigned int rows, unsigned int cols );
     unsigned int vao, vbo, ibo, programID;
