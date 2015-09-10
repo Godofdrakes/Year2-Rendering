@@ -2,6 +2,7 @@
 #define _APPLICATION_H_
 
 #include <string>
+#pragma comment( lib, "year2-Rendering.lib" )
 
 using std::string;
 
