@@ -20,6 +20,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rendering Geometry", "Rende
 		{BF18C40C-CA9E-4412-878B-DCF8B6DC8EB9} = {BF18C40C-CA9E-4412-878B-DCF8B6DC8EB9}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoadingTextures", "LoadingTextures\LoadingTextures.vcxproj", "{6A894994-0D80-4617-81B2-50FAC12B6BD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -60,6 +62,14 @@ Global
 		{5DB3F91B-31E9-4012-9D95-330FA0F375F2}.Release|x64.Build.0 = Release|x64
 		{5DB3F91B-31E9-4012-9D95-330FA0F375F2}.Release|x86.ActiveCfg = Release|Win32
 		{5DB3F91B-31E9-4012-9D95-330FA0F375F2}.Release|x86.Build.0 = Release|Win32
+		{6A894994-0D80-4617-81B2-50FAC12B6BD2}.Debug|x64.ActiveCfg = Debug|x64
+		{6A894994-0D80-4617-81B2-50FAC12B6BD2}.Debug|x64.Build.0 = Debug|x64
+		{6A894994-0D80-4617-81B2-50FAC12B6BD2}.Debug|x86.ActiveCfg = Debug|Win32
+		{6A894994-0D80-4617-81B2-50FAC12B6BD2}.Debug|x86.Build.0 = Debug|Win32
+		{6A894994-0D80-4617-81B2-50FAC12B6BD2}.Release|x64.ActiveCfg = Release|x64
+		{6A894994-0D80-4617-81B2-50FAC12B6BD2}.Release|x64.Build.0 = Release|x64
+		{6A894994-0D80-4617-81B2-50FAC12B6BD2}.Release|x86.ActiveCfg = Release|Win32
+		{6A894994-0D80-4617-81B2-50FAC12B6BD2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

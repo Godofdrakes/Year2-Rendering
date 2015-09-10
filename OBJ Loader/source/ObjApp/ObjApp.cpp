@@ -112,7 +112,7 @@ void ObjApp::CreateOpenGLBuffers( std::vector<tinyobj::shape_t>& shapes ) {
     }
 }
 
-void ObjApp::DrawOpenGLBuffers(std::vector<tinyobj::shape_t>& shapes) {
+void ObjApp::DrawOpenGLBuffers( std::vector<tinyobj::shape_t>& shapes ) {
     glUseProgram( programID );
     int projectionUniform = glGetUniformLocation( programID, "ProjectionView" );
     glUniformMatrix4fv( projectionUniform, 1, GL_FALSE, (float*)&camera->Camera_View_Transform_Mat4 );
