@@ -7,7 +7,6 @@
 using std::string;
 
 struct GLFWwindow;
-class Camera;
 
 enum ApplicationFail {
     NONE,
